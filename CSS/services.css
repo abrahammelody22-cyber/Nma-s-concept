@@ -1,0 +1,278 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #d6a900;
+}
+
+.book a {
+    text-decoration: none;
+    background: #188b08;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.book a:hover {
+    background: #126b05;
+}
+
+.hero {
+    min-height: 420px;
+    position: relative;
+    background: #40545a url(../IMG/LKAF7666.JP) center 5%/cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    animation: wedding;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+
+}
+
+.writeup {
+    /* margin: 400px; */
+    /* text-align: center; */
+    color: white;
+    /* margin-top: 200px; */
+}
+
+.writeup h1 {
+    color: gold;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: normal;
+    text-align: center;
+    margin: 210PX;
+
+
+}
+
+
+/* MAIN SECTION */
+
+.services-section {
+    width: 100%;
+    padding: 60px 6%;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+/* HEADING */
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-heading h2 {
+    font-size: 38px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.services-heading span {
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #e5bd25;
+    margin: auto;
+}
+
+.services-heading p {
+    color: #666;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* IMAGE CONTAINERS */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 20PX;
+}
+
+.service-card {
+    width: 33.33%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* IMAGE */
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* DARK OVERLAY */
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* TEXT ON IMAGE */
+
+.service-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.service-overlay h3 {
+    color: #f5c518;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.service-overlay p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER SECTION */
+
+.main-footer {
+    width: 100%;
+    background-color: #080808;
+    padding: 50px 7%;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-box {
+    flex: 1;
+}
+
+.footer-box h3 {
+    color: #f5c518;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #f5c518;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-list li span {
+    color: #ed7190;
+    font-size: 16px;
+}
